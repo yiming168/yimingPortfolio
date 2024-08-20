@@ -52,7 +52,7 @@ const Hero = () => {
             <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
         </span>
-        <p>
+        <p className={styles.description}>
           A father loves taking on programming challenges and striving to be a
           role model for his children.
         </p>
