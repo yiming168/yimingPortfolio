@@ -42,24 +42,25 @@ const Hero = () => {
         </h1>
         <h2>CST Co-op Student</h2>
         <span>
-          <a href="https://twitter.com/YimingZhuCST" target="_blank">
+          <a href="https://x.com/YimingZ03424620" target="_blank">
             <img src={twitterIcon} alt="Twitter icon" />
           </a>
           <a href="https://github.com/Yiming168" target="_blank">
             <img src={githubIcon} alt="Github icon" />
           </a>
-          <a href="https://linkedin.com/YimingZhuCST" target="_blank">
+          <a href="https://www.linkedin.com/in/yiming168" target="_blank">
             <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
         </span>
         <p className={styles.description}>
-          A father loves taking on programming challenges and striving to be a
-          role model for his children.
+          A newcomer to programming, I've realized my youthful dream of coding,
+          only to discover there's so much more to learn—and I'm passionately
+          eager to soak it all in.
         </p>
+        <a href={CV} download>
+          <button className="hover">Resume</button>
+        </a>
       </div>
-      <a href={CV} download>
-        <button className="hover">Resume</button>
-      </a>
     </section>
   );
 };
