@@ -13,8 +13,8 @@ function Projects() {
           src={DocuMintHorizontal}
           link="https://github.com/Donut11one/2800-202410-BBY02"
           h3="Documint"
-          p1="Docs mantain and transfer"
-          p2="Upload NFTs to Blockchain"
+          p1="Create and transfer NFTs"
+          p2="Upload to Blockchain"
         />
         <ProjectCard
           src={rooveLogo}
