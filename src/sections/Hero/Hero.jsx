@@ -50,7 +50,7 @@ const Hero = () => {
           background in microbiology, food science, and probiotic ingredient
           operations.
         </p>
-        <a href="/Yiming_Zhu_Business_Systems_Resume.docx" download>
+        <a href="/Yiming_Zhu_Business_Systems_Resume.pdf" download>
           <button className="hover">Resume</button>
         </a>
       </div>
