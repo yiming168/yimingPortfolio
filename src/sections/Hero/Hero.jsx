@@ -6,7 +6,6 @@ import twitterLight from "../../assets/twitter-light.svg";
 import twitterDark from "../../assets/twitter-dark.svg";
 import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
-import resume from "../../assets/Yiming_Zhu_Business_Systems_Resume.docx";
 import { useTheme } from "../../common/ThemeContext";
 
 const Hero = () => {
@@ -51,7 +50,7 @@ const Hero = () => {
           background in microbiology, food science, and probiotic ingredient
           operations.
         </p>
-        <a href={resume} download>
+        <a href="/Yiming_Zhu_Business_Systems_Resume.docx" download>
           <button className="hover">Resume</button>
         </a>
       </div>
