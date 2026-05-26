@@ -13,25 +13,24 @@ function Skills() {
     <section id="skills" className={styles.container}>
       <h1 className="sectionTitle">Skills</h1>
       <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="HTML" />
-        <SkillList src={checkMarkIcon} skill="CSS" />
-        <SkillList src={checkMarkIcon} skill="JvaScript" />
-        <SkillList src={checkMarkIcon} skill="Nodejs" />
+        <SkillList src={checkMarkIcon} skill="ERP / CRM" />
+        <SkillList src={checkMarkIcon} skill="Business Workflows" />
+        <SkillList src={checkMarkIcon} skill="LIMS Context" />
+        <SkillList src={checkMarkIcon} skill="Life Sciences" />
+      </div>
+      <hr />
+      <div className={styles.skillList}>
+        <SkillList src={checkMarkIcon} skill="Python" />
+        <SkillList src={checkMarkIcon} skill="Flask" />
+        <SkillList src={checkMarkIcon} skill="SQLAlchemy" />
+        <SkillList src={checkMarkIcon} skill="MySQL" />
       </div>
       <hr />
       <div className={styles.skillList}>
         <SkillList src={checkMarkIcon} skill="React" />
-        <SkillList src={checkMarkIcon} skill="Tailwind CSS" />
-        <SkillList src={checkMarkIcon} skill="Bootstrap" />
-        <SkillList src={checkMarkIcon} skill="FireStore" />
-        <SkillList src={checkMarkIcon} skill="MongoDB" />
-      </div>
-      <hr />
-      <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="My SQL" />
-        <SkillList src={checkMarkIcon} skill="C" />
-        <SkillList src={checkMarkIcon} skill="Linux" />
-        <SkillList src={checkMarkIcon} skill="Java" />
+        <SkillList src={checkMarkIcon} skill="React Native" />
+        <SkillList src={checkMarkIcon} skill="Firebase" />
+        <SkillList src={checkMarkIcon} skill="Data / AI" />
       </div>
     </section>
   );

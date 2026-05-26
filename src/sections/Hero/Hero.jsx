@@ -6,9 +6,7 @@ import twitterLight from "../../assets/twitter-light.svg";
 import twitterDark from "../../assets/twitter-dark.svg";
 import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
-import linkedinLight from "../../assets/linkedin-light.svg";
-import linkedinDark from "../../assets/linkedin-dark.svg";
-import CV from "../../assets/CV.pdf";
+import resume from "../../assets/Yiming_Zhu_Business_Systems_Resume.docx";
 import { useTheme } from "../../common/ThemeContext";
 
 const Hero = () => {
@@ -17,7 +15,6 @@ const Hero = () => {
   const themeIcon = theme === "light" ? sun : moon;
   const twitterIcon = theme === "light" ? twitterLight : twitterDark;
   const githubIcon = theme === "light" ? githubLight : githubDark;
-  const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
 
   return (
     <section id="hero" className={styles.container}>
@@ -40,24 +37,21 @@ const Hero = () => {
           <br />
           Zhu
         </h1>
-        <h2>CST Co-op Student</h2>
+        <h2>Business Systems Analyst</h2>
         <span>
-          <a href="https://x.com/YimingZ03424620" target="_blank">
+          <a href="https://x.com/YimingZ03424620" target="_blank" rel="noreferrer">
             <img src={twitterIcon} alt="Twitter icon" />
           </a>
-          <a href="https://github.com/Yiming168" target="_blank">
+          <a href="https://github.com/Yiming168" target="_blank" rel="noreferrer">
             <img src={githubIcon} alt="Github icon" />
-          </a>
-          <a href="https://www.linkedin.com/in/yiming168" target="_blank">
-            <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
         </span>
         <p className={styles.description}>
-          A newcomer to programming, I've realized my youthful dream of coding,
-          only to discover there's so much more to learn—and I'm passionately
-          eager to soak it all in.
+          I build practical ERP, CRM, and life-science software tools from a
+          background in microbiology, food science, and probiotic ingredient
+          operations.
         </p>
-        <a href={CV} download>
+        <a href={resume} download>
           <button className="hover">Resume</button>
         </a>
       </div>

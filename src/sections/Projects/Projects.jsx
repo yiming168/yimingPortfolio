@@ -1,34 +1,34 @@
 import styles from "./ProjectsStyles.module.css";
-import DocuMintHorizontal from "../../assets/DocuMintHorizontal.png";
+import erpSystem from "../../assets/erp-system.svg";
+import lifeScienceApp from "../../assets/life-science-app.svg";
 import HASHC from "../../assets/HASH.C.png";
-import rooveLogo from "../../assets/rooveLogo.png";
 import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
-      <h1 className="sectionTitle">Projects</h1>
+      <h1 className="sectionTitle">Selected Work</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={DocuMintHorizontal}
-          link="https://github.com/Donut11one/2800-202410-BBY02"
-          h3="Documint"
-          p1="Create and transfer NFTs"
-          p2="Upload to Blockchain"
+          src={erpSystem}
+          link="https://github.com/yiming168"
+          h3="Baifude ERP / CRM"
+          p1="Flask, SQLAlchemy, MySQL"
+          p2="Sales, shipment, contract, and payment workflows"
         />
         <ProjectCard
-          src={rooveLogo}
-          link="https://github.com/tommytty/1800_202410_BBY18"
-          h3="ROOVE"
-          p1="A matching app"
-          p2="Find preferred roommates"
+          src={lifeScienceApp}
+          link="https://apps.apple.com/ca/app/granville-biomedical/id6753088064"
+          h3="Granville Biomedical App"
+          p1="Expo, React Native, Firebase"
+          p2="Published app with admin quiz workflow"
         />
         <ProjectCard
           src={HASHC}
           link="https://github.com/Nivedpv2004/C-PROGRAMING"
-          h3="hash.c"
-          p1="Hash table in C"
-          p2="Contribute to opensource"
+          h3="Open Source C Module"
+          p1="Hash table implementation"
+          p2="Accepted contribution to public repository"
         />
       </div>
     </section>

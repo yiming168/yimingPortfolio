@@ -11,10 +11,14 @@
   }
 
   a {
-    width: fit-content;
+    width: min(280px, 90vw);
     text-decoration: none;
     color: #222;
     transition: transform 200ms ease-in-out;
+  }
+
+  p {
+    margin-top: 6px;
   }
 
   a:hover {

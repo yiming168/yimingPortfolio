@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Life science app</title>
+  <desc id="desc">A phone and admin portal illustration for a life science learning app.</desc>
+  <rect width="640" height="420" rx="28" fill="#f8f9f6"/>
+  <rect x="90" y="64" width="174" height="292" rx="30" fill="#0b2545"/>
+  <rect x="108" y="96" width="138" height="220" rx="18" fill="#ffffff"/>
+  <circle cx="177" cy="334" r="10" fill="#d8e0ea"/>
+  <rect x="306" y="82" width="250" height="250" rx="20" fill="#ffffff" stroke="#d6dee9" stroke-width="4"/>
+  <rect x="306" y="82" width="250" height="56" rx="20" fill="#2e74b5"/>
+  <text x="431" y="119" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#ffffff" text-anchor="middle">Admin Portal</text>
+  <g fill="#e8eef5">
+    <rect x="334" y="166" width="194" height="28" rx="8"/>
+    <rect x="334" y="211" width="194" height="28" rx="8"/>
+    <rect x="334" y="256" width="132" height="28" rx="8"/>
+  </g>
+  <g stroke="#4fb06d" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M134 184l26 26 58-70"/>
+  </g>
+  <g fill="#0b2545" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text x="177" y="255" font-size="22">Quiz App</text>
+    <text x="431" y="309" font-size="19">Stage -> Review -> Publish</text>
+  </g>
+</svg>
