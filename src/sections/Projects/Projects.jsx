@@ -5,7 +5,8 @@ import tumorLearningCurve from "../../assets/tumor-learning-curve.png";
 import insuranceClaimDistribution from "../../assets/insurance-claim-distribution.png";
 import nutritionGradcamComparison from "../../assets/nutrition-gradcam-comparison.png";
 import crossyThinkLogo from "../../assets/crossythink-logo.png";
-import DocuMintHorizontal from "../../assets/DocuMintHorizontal.png";
+import documintCircle from "../../assets/documint-circle.png";
+import mealPlanIqLogo from "../../assets/tab_logo.png";
 import HASHC from "../../assets/HASH.C.png";
 import rooveLogo from "../../assets/rooveLogo.png";
 import ProjectCard from "../../common/ProjectCard";
@@ -67,7 +68,7 @@ function Projects() {
           tags={["Flask", "MySQL", "JWT", "LLM"]}
         />
         <ProjectCard
-          src={DocuMintHorizontal}
+          src={documintCircle}
           link="https://documint.netlify.app"
           h3="Documint"
           p1="BCIT team NFT management app with React, Firestore, user guidance, validation, and concurrency testing."
@@ -83,12 +84,12 @@ function Projects() {
           tags={["Web app", "Agile", "Team project"]}
         />
         <ProjectCard
+          src={mealPlanIqLogo}
           link="https://mealplaniq.com"
           h3="MealPlanIQ"
           p1="Personalized meal planning app with one-click meal replacement and nutrient recalculation."
           p2="Integrated recipe data from Google Cloud Storage with Angular and Flask."
           tags={["Angular", "Flask", "GCS"]}
-          imageNeeded
         />
         <ProjectCard
           src={HASHC}
