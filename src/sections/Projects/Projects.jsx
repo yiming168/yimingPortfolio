@@ -4,6 +4,7 @@ import lifeScienceApp from "../../assets/life-science-app.svg";
 import tumorLearningCurve from "../../assets/tumor-learning-curve.png";
 import insuranceClaimDistribution from "../../assets/insurance-claim-distribution.png";
 import nutritionGradcamComparison from "../../assets/nutrition-gradcam-comparison.png";
+import crossyThinkLogo from "../../assets/crossythink-logo.png";
 import DocuMintHorizontal from "../../assets/DocuMintHorizontal.png";
 import HASHC from "../../assets/HASH.C.png";
 import rooveLogo from "../../assets/rooveLogo.png";
@@ -58,12 +59,12 @@ function Projects() {
           tags={["React Native", "Expo", "Firebase", "Admin portal"]}
         />
         <ProjectCard
+          src={crossyThinkLogo}
           link="https://crossythink-frontend.netlify.app/gameplay"
           h3="CrossyThink"
           p1="AI-powered crossword puzzle game with Flask REST backend, SQLAlchemy, MySQL, JWT authentication, and role-based access."
           p2="Experimented with local Mistral 7B hosting before switching to Gemini API after graduation."
           tags={["Flask", "MySQL", "JWT", "LLM"]}
-          imageNeeded
         />
         <ProjectCard
           src={DocuMintHorizontal}
