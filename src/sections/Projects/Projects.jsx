@@ -1,6 +1,6 @@
 import styles from "./ProjectsStyles.module.css";
 import erpSystem from "../../assets/erp-system.svg";
-import lifeScienceApp from "../../assets/life-science-app.svg";
+import granvilleBiomedicalLogo from "../../assets/granville-biomedical-logo.png";
 import tumorLearningCurve from "../../assets/tumor-learning-curve.png";
 import insuranceClaimDistribution from "../../assets/insurance-claim-distribution.png";
 import nutritionGradcamComparison from "../../assets/nutrition-gradcam-comparison.png";
@@ -51,7 +51,7 @@ function Projects() {
           tags={["PyTorch", "FastAPI", "React", "Jetson"]}
         />
         <ProjectCard
-          src={lifeScienceApp}
+          src={granvilleBiomedicalLogo}
           link="https://apps.apple.com/ca/app/granville-biomedical/id6753088064"
           h3="Granville Biomedical App"
           p1="Cross-platform Expo and React Native mobile app plus Firebase-backed admin portal for a biomedical client."
