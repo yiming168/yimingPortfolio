@@ -10,6 +10,8 @@
 }
 
 .visual {
+  display: grid;
+  justify-items: center;
   justify-self: center;
   position: relative;
   width: min(100%, 420px);
@@ -128,12 +130,12 @@
   background: var(--glass-color);
   border: 1px solid var(--border-color);
   border-radius: 24px;
-  bottom: -18px;
   box-shadow: var(--soft-shadow);
-  max-width: 260px;
+  margin-top: 18px;
+  max-width: 320px;
   padding: 18px;
-  position: absolute;
-  right: 0;
+  position: relative;
+  width: min(100%, 320px);
 }
 
 .profileCard span {
