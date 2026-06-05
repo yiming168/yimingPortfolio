@@ -1,6 +1,7 @@
 import styles from "./ProjectsStyles.module.css";
 import erpSystem from "../../assets/erp-system.svg";
 import lifeScienceApp from "../../assets/life-science-app.svg";
+import tumorLearningCurve from "../../assets/tumor-learning-curve.png";
 import DocuMintHorizontal from "../../assets/DocuMintHorizontal.png";
 import HASHC from "../../assets/HASH.C.png";
 import rooveLogo from "../../assets/rooveLogo.png";
@@ -23,12 +24,12 @@ function Projects() {
           tags={["Python", "Flask", "MySQL", "ERP"]}
         />
         <ProjectCard
+          src={tumorLearningCurve}
           link="https://github.com/yiming168/Tumor-Identification-with-Logistic-Regression"
           h3="Tumor Classification ML"
           p1="Gene-expression machine learning workflow for tumor versus normal sample classification."
           p2="Used preprocessing, feature selection, PCA, model comparison, ROC and precision-recall evaluation."
           tags={["Python", "scikit-learn", "PCA", "Bio data"]}
-          imageNeeded
         />
         <ProjectCard
           link="#"
