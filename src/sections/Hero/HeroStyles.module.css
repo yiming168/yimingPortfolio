@@ -5,8 +5,7 @@
   grid-template-columns: 1fr;
   margin: 0 auto;
   max-width: 1180px;
-  min-height: 100dvh;
-  padding: 72px 22px 36px;
+  padding: 72px 22px 20px;
 }
 
 .visual {
@@ -164,7 +163,7 @@
 @media (min-width: 800px) {
   .container {
     grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
-    padding: 80px 40px 60px;
+    padding: 80px 40px 36px;
   }
 }
 
