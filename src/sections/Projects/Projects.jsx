@@ -2,6 +2,7 @@ import styles from "./ProjectsStyles.module.css";
 import erpSystem from "../../assets/erp-system.svg";
 import lifeScienceApp from "../../assets/life-science-app.svg";
 import tumorLearningCurve from "../../assets/tumor-learning-curve.png";
+import insuranceClaimDistribution from "../../assets/insurance-claim-distribution.png";
 import DocuMintHorizontal from "../../assets/DocuMintHorizontal.png";
 import HASHC from "../../assets/HASH.C.png";
 import rooveLogo from "../../assets/rooveLogo.png";
@@ -32,12 +33,12 @@ function Projects() {
           tags={["Python", "scikit-learn", "PCA", "Bio data"]}
         />
         <ProjectCard
+          src={insuranceClaimDistribution}
           link="#"
           h3="Insurance ML Competition"
           p1="First-place BCIT machine learning competition project using a two-stage XGBoost approach."
           p2="Optimized prediction and classification performance across large structured data with strong MAE and F1 results."
           tags={["XGBoost", "pandas", "F1", "MAE"]}
-          imageNeeded
         />
         <ProjectCard
           link="#"
