@@ -1,36 +1,53 @@
 import styles from "./SkillsStyles.module.css";
-import checkMarkIconDark from "../../assets/checkmark-dark.svg";
-import checkMarkIconLight from "../../assets/checkmark-light.svg";
-import SkillList from "../../common/SkillList";
-import { useTheme } from "../../common/ThemeContext";
+
+const skillGroups = [
+  {
+    title: "Software",
+    items: ["Python", "Java", "JavaScript", "TypeScript", "C", "REST APIs"],
+  },
+  {
+    title: "Systems",
+    items: ["Flask", "React", "React Native", "Angular", "Node.js", "Firebase"],
+  },
+  {
+    title: "Data and AI",
+    items: ["SQL", "MySQL", "pandas", "NumPy", "scikit-learn", "XGBoost"],
+  },
+  {
+    title: "Scientific and business context",
+    items: [
+      "Microbiology",
+      "Food science",
+      "Biotech ingredients",
+      "ERP workflows",
+      "LIMS-aware records",
+      "Laboratory data",
+    ],
+  },
+  {
+    title: "Tools",
+    items: ["Git/GitHub", "Docker", "Linux/Unix basics", "n8n", "Synology DSM", "VS Code"],
+  },
+];
 
 function Skills() {
-  const { theme } = useTheme();
-  const checkMarkIcon =
-    theme === "light" ? checkMarkIconLight : checkMarkIconDark;
-
   return (
     <section id="skills" className={styles.container}>
-      <h1 className="sectionTitle">Skills</h1>
-      <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="ERP / CRM" />
-        <SkillList src={checkMarkIcon} skill="Business Workflows" />
-        <SkillList src={checkMarkIcon} skill="LIMS Context" />
-        <SkillList src={checkMarkIcon} skill="Life Sciences" />
+      <div className={styles.header}>
+        <p>Capabilities</p>
+        <h1 className="sectionTitle">A practical stack for scientific systems.</h1>
       </div>
-      <hr />
-      <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="Python" />
-        <SkillList src={checkMarkIcon} skill="Flask" />
-        <SkillList src={checkMarkIcon} skill="SQLAlchemy" />
-        <SkillList src={checkMarkIcon} skill="MySQL" />
-      </div>
-      <hr />
-      <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="React" />
-        <SkillList src={checkMarkIcon} skill="React Native" />
-        <SkillList src={checkMarkIcon} skill="Firebase" />
-        <SkillList src={checkMarkIcon} skill="Data / AI" />
+      <div className={styles.grid}>
+        {skillGroups.map((group) => (
+          <article className={styles.card} key={group.title}>
+            <h3>{group.title}</h3>
+            <div>
+              {group.items.map((item) => (
+                <span key={item}>{item}</span>
+              ))}
+            </div>
+          </article>
+        ))}
       </div>
     </section>
   );

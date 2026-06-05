@@ -1,101 +1,173 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-  text-align: center;
-  height: 100dvh;
-  min-height: 500px;
-
-  .hero {
-    max-width: 200px;
-  }
-
-  span {
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-
-    a {
-      margin: 0;
-
-      img {
-        width: 30px;
-      }
-    }
-  }
-
-  a {
-    width: fit-content;
-    align-self: center;
-  }
-
-  button {
-    background-color: var(--btn-color);
-    color: var(--btn-text-color);
-    border: none;
-    border-radius: 20px;
-    width: 126px;
-    height: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
-  }
-
-  button:hover {
-    transform: scale(1.05);
-  }
-
-  button:active {
-    transform: translateY(2px);
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-  }
+  align-items: center;
+  display: grid;
+  gap: 38px;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  max-width: 1180px;
+  min-height: 100dvh;
+  padding: 72px 22px 36px;
 }
 
-.colorModeContainer {
+.visual {
+  justify-self: center;
   position: relative;
+  width: min(100%, 420px);
+}
+
+.hero {
+  aspect-ratio: 1;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  box-shadow: var(--soft-shadow);
+  display: block;
+  object-fit: cover;
+  width: min(78vw, 360px);
 }
 
 .colorMode {
+  align-items: center;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  box-shadow: var(--soft-shadow);
+  display: flex;
+  height: 44px;
+  justify-content: center;
   position: absolute;
-  right: 0;
-  width: 25px;
+  right: 14px;
+  top: 14px;
+  width: 44px;
 }
 
-.colorMode:hover {
-  cursor: pointer;
-}
-
-.description {
-  max-width: 36ch;
-  align-self: center;
+.colorMode img {
+  width: 22px;
 }
 
 .info {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
+  max-width: 720px;
 }
 
-@media (width >= 800px) {
-  .container {
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-evenly;
+.eyebrow {
+  color: var(--muted-text-color);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
 
-    .hero {
-      max-width: 350px;
-      width: 350px;
-    }
+.info h1 {
+  font-size: clamp(48px, 9vw, 88px);
+  letter-spacing: 0;
+  line-height: 0.96;
+  text-transform: none;
+}
+
+.info h2 {
+  color: var(--text-color);
+  font-size: clamp(26px, 4vw, 48px);
+  line-height: 1.08;
+  max-width: 680px;
+  text-transform: none;
+}
+
+.description {
+  color: var(--body-text-color);
+  font-size: 18px;
+  line-height: 1.55;
+  max-width: 660px;
+}
+
+.actions,
+.socials {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.primaryAction,
+.secondaryAction {
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 12px 18px;
+  text-decoration: none;
+}
+
+.primaryAction {
+  background: var(--text-color);
+  color: var(--background-color);
+}
+
+.secondaryAction {
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+.socials a {
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  display: flex;
+  height: 42px;
+  justify-content: center;
+  width: 42px;
+}
+
+.socials img {
+  width: 22px;
+}
+
+.profileCard {
+  backdrop-filter: blur(18px);
+  background: var(--glass-color);
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  bottom: -18px;
+  box-shadow: var(--soft-shadow);
+  max-width: 260px;
+  padding: 18px;
+  position: absolute;
+  right: 0;
+}
+
+.profileCard span {
+  color: var(--muted-text-color);
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.profileCard strong {
+  color: var(--text-color);
+  display: block;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.profileCard p {
+  color: var(--body-text-color);
+  font-size: 13px;
+  line-height: 1.45;
+  margin-top: 8px;
+}
+
+@media (min-width: 800px) {
+  .container {
+    grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+    padding: 80px 40px 60px;
   }
 }
 
-@media (width >= 1400px) {
-  .container {
-    .hero {
-      max-width: 400px;
-      width: 400px;
-    }
+@media (min-width: 1400px) {
+  .hero {
+    width: 400px;
   }
 }
