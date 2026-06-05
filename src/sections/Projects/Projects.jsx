@@ -3,6 +3,7 @@ import erpSystem from "../../assets/erp-system.svg";
 import lifeScienceApp from "../../assets/life-science-app.svg";
 import tumorLearningCurve from "../../assets/tumor-learning-curve.png";
 import insuranceClaimDistribution from "../../assets/insurance-claim-distribution.png";
+import nutritionGradcamComparison from "../../assets/nutrition-gradcam-comparison.png";
 import DocuMintHorizontal from "../../assets/DocuMintHorizontal.png";
 import HASHC from "../../assets/HASH.C.png";
 import rooveLogo from "../../assets/rooveLogo.png";
@@ -41,12 +42,12 @@ function Projects() {
           tags={["XGBoost", "pandas", "F1", "MAE"]}
         />
         <ProjectCard
+          src={nutritionGradcamComparison}
           link="#"
-          h3="Plant Nutrition AI"
-          p1="Jetson-oriented plant nutrition deficiency recognition project using computer vision."
-          p2="Combined model training with a FastAPI and React/Vite interface for research demonstration."
+          h3="Human Nutrition Deficiency AI"
+          p1="Computer vision project for recognizing visible nutrition-deficiency indicators from human skin and nail images."
+          p2="Built a research demo with model training, Grad-CAM explainability, and a FastAPI plus React/Vite interface."
           tags={["PyTorch", "FastAPI", "React", "Jetson"]}
-          imageNeeded
         />
         <ProjectCard
           src={lifeScienceApp}
