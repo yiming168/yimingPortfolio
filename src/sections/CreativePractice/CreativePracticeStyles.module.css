@@ -1,0 +1,84 @@
+.container {
+  margin: 0 auto;
+  max-width: 1120px;
+  padding: 0 22px;
+}
+
+.intro {
+  margin: 0 auto 28px;
+  max-width: 760px;
+  text-align: center;
+}
+
+.eyebrow {
+  color: var(--muted-text-color);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.intro h2 {
+  color: var(--text-color);
+  font-size: clamp(32px, 5vw, 52px);
+  letter-spacing: 0;
+  line-height: 1.05;
+  margin-bottom: 16px;
+}
+
+.intro p {
+  color: var(--body-text-color);
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.gallery {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+.card {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 28px;
+  box-shadow: var(--soft-shadow);
+  overflow: hidden;
+}
+
+.card img {
+  aspect-ratio: 4 / 3;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card div {
+  display: grid;
+  gap: 8px;
+  padding: 20px;
+}
+
+.card h3 {
+  color: var(--text-color);
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+.card p {
+  color: var(--body-text-color);
+  font-size: 15px;
+  line-height: 1.48;
+}
+
+@media (min-width: 760px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
