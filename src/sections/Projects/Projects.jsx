@@ -1,5 +1,6 @@
 import styles from "./ProjectsStyles.module.css";
 import erpSystem from "../../assets/erp-system.svg";
+import newbioLogo from "../../assets/newbio-logo.svg";
 import granvilleBiomedicalLogo from "../../assets/granville-biomedical-logo.png";
 import tumorLearningCurve from "../../assets/tumor-learning-curve.png";
 import insuranceClaimDistribution from "../../assets/insurance-claim-distribution.png";
@@ -19,6 +20,14 @@ function Projects() {
         <h1 className="sectionTitle">Projects that connect software, science, and operations.</h1>
       </div>
       <div className={styles.projectsContainer}>
+        <ProjectCard
+          src={newbioLogo}
+          link="https://newbio.net"
+          h3="Newbio Trading Corp."
+          p1="B2B marketing and product site for a Canada-based supplier of probiotic and microbial ingredients."
+          p2="Built with Vite, Tailwind CSS, and an Express.js backend, connecting North American manufacturers with vetted overseas production."
+          tags={["Vite", "Tailwind CSS", "Express", "B2B"]}
+        />
         <ProjectCard
           src={erpSystem}
           link="https://github.com/yiming168"
