@@ -28,7 +28,7 @@ const Hero = () => {
           clear records and reliable tools matter.
         </p>
         <div className={styles.actions}>
-          <a className={styles.primaryAction} href="/Yiming_Zhu_Master_AI_BioTech_Business_Systems_Resume_20260604.docx">
+          <a className={styles.primaryAction} href="/Yiming_Zhu_Software_Developer_Resume_1p.pdf">
             Download resume
           </a>
           <a className={styles.secondaryAction} href="mailto:yiming168@gmail.com">
