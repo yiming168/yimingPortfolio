@@ -30,11 +30,12 @@ function Projects() {
         />
         <ProjectCard
           src={erpSystem}
-          link="https://github.com/yiming168"
+          link="https://erp-demo.newbio.net"
+          githubLink="https://github.com/yiming168/erp-demo"
           h3="Baifude ERP/CRM"
-          p1="Python, Flask, SQLAlchemy, and MySQL system for customer, product, contract, shipment, financial, and reporting workflows."
-          p2="Built from real biotech ingredient operations, including practical contract timing and sales lifecycle edge cases."
-          tags={["Python", "Flask", "MySQL", "ERP"]}
+          p1="Python, Flask, SQLAlchemy, and MySQL system for customer, product, contract, shipment, financial, and reporting workflows, now with inventory, stock in/out, and procurement modules."
+          p2="Built from real biotech ingredient operations, including practical contract timing and sales lifecycle edge cases. Try the live English demo or browse the source."
+          tags={["Python", "Flask", "MySQL", "ERP", "Inventory"]}
         />
         <ProjectCard
           src={tumorLearningCurve}

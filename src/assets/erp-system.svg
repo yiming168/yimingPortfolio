@@ -1,27 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="424" viewBox="0 0 640 424" role="img" aria-labelledby="title desc">
   <title id="title">ERP system dashboard</title>
-  <desc id="desc">A simple dashboard illustration with database, shipment, contract, and payment modules.</desc>
-  <rect width="640" height="420" rx="28" fill="#f4f7fb"/>
-  <rect x="58" y="56" width="524" height="308" rx="22" fill="#ffffff" stroke="#d6dee9" stroke-width="4"/>
-  <rect x="58" y="56" width="524" height="68" rx="22" fill="#0b2545"/>
-  <circle cx="100" cy="90" r="10" fill="#e85d75"/>
-  <circle cx="130" cy="90" r="10" fill="#f2b84b"/>
-  <circle cx="160" cy="90" r="10" fill="#4fb06d"/>
-  <text x="206" y="99" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">Baifude ERP / CRM</text>
-  <g fill="#e8eef5" stroke="#b7c6d8" stroke-width="3">
-    <rect x="92" y="156" width="134" height="70" rx="14"/>
-    <rect x="253" y="156" width="134" height="70" rx="14"/>
-    <rect x="414" y="156" width="134" height="70" rx="14"/>
-    <rect x="92" y="257" width="134" height="70" rx="14"/>
-    <rect x="253" y="257" width="134" height="70" rx="14"/>
-    <rect x="414" y="257" width="134" height="70" rx="14"/>
+  <desc id="desc">A dashboard illustration with customer, contract, shipment, product, invoice, inventory, stock movement, procurement, and report modules, styled in Newbio brand blue.</desc>
+  <rect width="640" height="424" rx="28" fill="#eef3f8"/>
+  <rect x="58" y="52" width="524" height="336" rx="22" fill="#ffffff" stroke="#c9d6e4" stroke-width="4"/>
+  <rect x="58" y="52" width="524" height="64" rx="22" fill="#053d6a"/>
+  <circle cx="98" cy="84" r="9" fill="#e85d75"/>
+  <circle cx="126" cy="84" r="9" fill="#f2b84b"/>
+  <circle cx="154" cy="84" r="9" fill="#4fb06d"/>
+  <text x="184" y="92" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Baifude ERP / CRM</text>
+  <rect x="486" y="68" width="70" height="32" rx="16" fill="#00b6a8"/>
+  <text x="521" y="90" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">DEMO</text>
+  <rect x="58" y="116" width="524" height="30" fill="#f3f7fb"/>
+  <text x="320" y="136" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#0a5a99" text-anchor="middle">erp-demo.newbio.net</text>
+  <g fill="#e3edf7" stroke="#aebeda" stroke-width="3">
+    <rect x="78" y="164" width="152" height="60" rx="14"/>
+    <rect x="244" y="164" width="152" height="60" rx="14"/>
+    <rect x="410" y="164" width="152" height="60" rx="14"/>
+    <rect x="78" y="238" width="152" height="60" rx="14"/>
+    <rect x="244" y="238" width="152" height="60" rx="14"/>
+    <rect x="410" y="238" width="152" height="60" rx="14"/>
+    <rect x="78" y="312" width="152" height="60" rx="14"/>
+    <rect x="244" y="312" width="152" height="60" rx="14"/>
+    <rect x="410" y="312" width="152" height="60" rx="14"/>
   </g>
-  <g font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#0b2545" text-anchor="middle">
-    <text x="159" y="197">Customers</text>
-    <text x="320" y="197">Contracts</text>
-    <text x="481" y="197">Shipments</text>
-    <text x="159" y="298">Products</text>
-    <text x="320" y="298">Invoices</text>
-    <text x="481" y="298">Reports</text>
+  <g font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#053d6a" text-anchor="middle">
+    <text x="154" y="198">Customers</text>
+    <text x="320" y="198">Contracts</text>
+    <text x="486" y="198">Shipments</text>
+    <text x="154" y="272">Products</text>
+    <text x="320" y="272">Invoices</text>
+    <text x="486" y="272">Inventory</text>
+    <text x="154" y="346">Stock In/Out</text>
+    <text x="320" y="346">Procurement</text>
+    <text x="486" y="346">Reports</text>
   </g>
 </svg>

@@ -25,15 +25,40 @@
   grid-template-columns: 1fr;
 }
 
-.container a {
+.container :global(.projectCard) {
+  height: 100%;
+  position: relative;
+}
+
+.container :global(.projectCardLink) {
   background: var(--project-card-bg);
   border: 1px solid var(--border-color);
   border-radius: 28px;
   box-shadow: var(--soft-shadow);
   color: var(--text-color);
-  min-height: 100%;
+  display: block;
+  height: 100%;
   overflow: hidden;
   text-decoration: none;
+}
+
+.container :global(.projectGithubLink) {
+  align-items: center;
+  background: var(--project-card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 40px;
+  z-index: 2;
+}
+
+.container :global(.projectGithubLink img) {
+  width: 20px;
 }
 
 .container :global(.projectMedia) {
