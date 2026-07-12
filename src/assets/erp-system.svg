@@ -1,37 +1,117 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="424" viewBox="0 0 640 424" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
   <title id="title">ERP system dashboard</title>
-  <desc id="desc">A dashboard illustration with customer, contract, shipment, product, invoice, inventory, stock movement, procurement, and report modules, styled in Newbio brand blue.</desc>
-  <rect width="640" height="424" rx="28" fill="#eef3f8"/>
-  <rect x="58" y="52" width="524" height="336" rx="22" fill="#ffffff" stroke="#c9d6e4" stroke-width="4"/>
-  <rect x="58" y="52" width="524" height="64" rx="22" fill="#053d6a"/>
-  <circle cx="98" cy="84" r="9" fill="#e85d75"/>
-  <circle cx="126" cy="84" r="9" fill="#f2b84b"/>
-  <circle cx="154" cy="84" r="9" fill="#4fb06d"/>
-  <text x="184" y="92" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Baifude ERP / CRM</text>
-  <rect x="486" y="68" width="70" height="32" rx="16" fill="#00b6a8"/>
-  <text x="521" y="90" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">DEMO</text>
-  <rect x="58" y="116" width="524" height="30" fill="#f3f7fb"/>
-  <text x="320" y="136" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#0a5a99" text-anchor="middle">erp-demo.newbio.net</text>
-  <g fill="#e3edf7" stroke="#aebeda" stroke-width="3">
-    <rect x="78" y="164" width="152" height="60" rx="14"/>
-    <rect x="244" y="164" width="152" height="60" rx="14"/>
-    <rect x="410" y="164" width="152" height="60" rx="14"/>
-    <rect x="78" y="238" width="152" height="60" rx="14"/>
-    <rect x="244" y="238" width="152" height="60" rx="14"/>
-    <rect x="410" y="238" width="152" height="60" rx="14"/>
-    <rect x="78" y="312" width="152" height="60" rx="14"/>
-    <rect x="244" y="312" width="152" height="60" rx="14"/>
-    <rect x="410" y="312" width="152" height="60" rx="14"/>
+  <desc id="desc">A modern dashboard illustration with sidebar navigation, KPI cards, revenue chart, and inventory table, representing the Baifude ERP/CRM modules in Newbio brand blue.</desc>
+  <defs>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#053d6a"/>
+      <stop offset="1" stop-color="#0a5a99"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#0a5a99"/>
+      <stop offset="1" stop-color="#00b6a8"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#053d6a" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="640" height="360" rx="24" fill="#eef3f8"/>
+
+  <!-- app window -->
+  <rect x="36" y="28" width="568" height="304" rx="18" fill="#ffffff" filter="url(#cardShadow)"/>
+
+  <!-- top bar -->
+  <path d="M36 46 a18 18 0 0 1 18 -18 h532 a18 18 0 0 1 18 18 v30 h-568 z" fill="url(#headerGrad)"/>
+  <circle cx="66" cy="52" r="6" fill="#e85d75"/>
+  <circle cx="86" cy="52" r="6" fill="#f2b84b"/>
+  <circle cx="106" cy="52" r="6" fill="#4fb06d"/>
+  <text x="128" y="59" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Baifude ERP / CRM</text>
+  <rect x="524" y="38" width="62" height="28" rx="14" fill="#00b6a8"/>
+  <text x="555" y="57" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">DEMO</text>
+
+  <!-- sidebar -->
+  <rect x="36" y="76" width="150" height="256" fill="#f3f7fb"/>
+  <path d="M36 314 v-238 h150 v256 h-132 a18 18 0 0 1 -18 -18 z" fill="#f3f7fb"/>
+  <g font-family="Arial, sans-serif" font-size="12.5" font-weight="600" fill="#3d5a78">
+    <rect x="48" y="90" width="126" height="26" rx="8" fill="#053d6a"/>
+    <circle cx="63" cy="103" r="4.5" fill="#00b6a8"/>
+    <text x="76" y="107" fill="#ffffff">Dashboard</text>
+
+    <circle cx="63" cy="135" r="4.5" fill="#9db8d2"/>
+    <text x="76" y="139">Customers</text>
+    <circle cx="63" cy="163" r="4.5" fill="#9db8d2"/>
+    <text x="76" y="167">Contracts</text>
+    <circle cx="63" cy="191" r="4.5" fill="#9db8d2"/>
+    <text x="76" y="195">Inventory</text>
+    <circle cx="63" cy="219" r="4.5" fill="#9db8d2"/>
+    <text x="76" y="223">Procurement</text>
+    <circle cx="63" cy="247" r="4.5" fill="#9db8d2"/>
+    <text x="76" y="251">Shipments</text>
+    <circle cx="63" cy="275" r="4.5" fill="#9db8d2"/>
+    <text x="76" y="279">Invoices</text>
+    <circle cx="63" cy="303" r="4.5" fill="#9db8d2"/>
+    <text x="76" y="307">Reports</text>
   </g>
-  <g font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#053d6a" text-anchor="middle">
-    <text x="154" y="198">Customers</text>
-    <text x="320" y="198">Contracts</text>
-    <text x="486" y="198">Shipments</text>
-    <text x="154" y="272">Products</text>
-    <text x="320" y="272">Invoices</text>
-    <text x="486" y="272">Inventory</text>
-    <text x="154" y="346">Stock In/Out</text>
-    <text x="320" y="346">Procurement</text>
-    <text x="486" y="346">Reports</text>
+
+  <!-- KPI cards -->
+  <g font-family="Arial, sans-serif">
+    <rect x="202" y="90" width="120" height="58" rx="12" fill="#ffffff" stroke="#dbe6f1" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <text x="216" y="110" font-size="11" font-weight="600" fill="#7a94ad">Contracts</text>
+    <text x="216" y="134" font-size="21" font-weight="700" fill="#053d6a">100+</text>
+    <path d="M296 128 l7 -8 5 4 8 -10" stroke="#00b6a8" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="334" y="90" width="120" height="58" rx="12" fill="#ffffff" stroke="#dbe6f1" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <text x="348" y="110" font-size="11" font-weight="600" fill="#7a94ad">Product orders</text>
+    <text x="348" y="134" font-size="21" font-weight="700" fill="#053d6a">200+</text>
+    <path d="M428 128 l7 -6 5 2 8 -9" stroke="#0a5a99" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="466" y="90" width="120" height="58" rx="12" fill="#ffffff" stroke="#dbe6f1" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <text x="480" y="110" font-size="11" font-weight="600" fill="#7a94ad">Revenue / yr</text>
+    <text x="480" y="134" font-size="21" font-weight="700" fill="#053d6a">$1.05M</text>
+    <path d="M560 128 l7 -4 5 -3 8 -6" stroke="#f2b84b" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- revenue chart card -->
+  <g font-family="Arial, sans-serif">
+    <rect x="202" y="162" width="240" height="150" rx="12" fill="#ffffff" stroke="#dbe6f1" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <text x="218" y="184" font-size="12" font-weight="700" fill="#053d6a">Monthly sales</text>
+    <g stroke="#eef3f8" stroke-width="1.5">
+      <line x1="218" y1="290" x2="426" y2="290"/>
+      <line x1="218" y1="262" x2="426" y2="262"/>
+      <line x1="218" y1="234" x2="426" y2="234"/>
+      <line x1="218" y1="206" x2="426" y2="206"/>
+    </g>
+    <g fill="url(#barGrad)">
+      <rect x="226" y="252" width="20" height="38" rx="4"/>
+      <rect x="258" y="236" width="20" height="54" rx="4"/>
+      <rect x="290" y="258" width="20" height="32" rx="4"/>
+      <rect x="322" y="222" width="20" height="68" rx="4"/>
+      <rect x="354" y="240" width="20" height="50" rx="4"/>
+      <rect x="386" y="204" width="20" height="86" rx="4"/>
+    </g>
+  </g>
+
+  <!-- inventory table card -->
+  <g font-family="Arial, sans-serif">
+    <rect x="456" y="162" width="130" height="150" rx="12" fill="#ffffff" stroke="#dbe6f1" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <text x="470" y="184" font-size="12" font-weight="700" fill="#053d6a">Stock in / out</text>
+    <g font-size="10.5" font-weight="600" fill="#3d5a78">
+      <circle cx="476" cy="204" r="4" fill="#4fb06d"/>
+      <text x="487" y="208">Probiotic A</text>
+      <text x="574" y="208" text-anchor="end" fill="#4fb06d">+120</text>
+      <line x1="470" y1="218" x2="572" y2="218" stroke="#eef3f8" stroke-width="1.5"/>
+      <circle cx="476" cy="232" r="4" fill="#e85d75"/>
+      <text x="487" y="236">Enzyme B</text>
+      <text x="574" y="236" text-anchor="end" fill="#e85d75">-45</text>
+      <line x1="470" y1="246" x2="572" y2="246" stroke="#eef3f8" stroke-width="1.5"/>
+      <circle cx="476" cy="260" r="4" fill="#4fb06d"/>
+      <text x="487" y="264">Culture C</text>
+      <text x="574" y="264" text-anchor="end" fill="#4fb06d">+80</text>
+      <line x1="470" y1="274" x2="572" y2="274" stroke="#eef3f8" stroke-width="1.5"/>
+      <circle cx="476" cy="288" r="4" fill="#f2b84b"/>
+      <text x="487" y="292">BOM deduct</text>
+      <text x="574" y="292" text-anchor="end" fill="#0a5a99">auto</text>
+    </g>
   </g>
 </svg>
