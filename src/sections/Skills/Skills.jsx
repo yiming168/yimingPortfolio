@@ -14,15 +14,8 @@ const skillGroups = [
     items: ["SQL", "MySQL", "pandas", "NumPy", "scikit-learn", "XGBoost"],
   },
   {
-    title: "Scientific and business context",
-    items: [
-      "Microbiology",
-      "Food science",
-      "Biotech ingredients",
-      "ERP workflows",
-      "LIMS-aware records",
-      "Laboratory data",
-    ],
+    title: "Engineering practices",
+    items: ["OOP", "Data structures", "Software testing", "Agile/Scrum", "Git workflows", "Application support"],
   },
   {
     title: "Tools",
@@ -35,7 +28,7 @@ function Skills() {
     <section id="skills" className={styles.container}>
       <div className={styles.header}>
         <p>Capabilities</p>
-        <h1 className="sectionTitle">A practical stack for scientific systems.</h1>
+        <h1 className="sectionTitle">A practical stack for junior software roles.</h1>
       </div>
       <div className={styles.grid}>
         {skillGroups.map((group) => (

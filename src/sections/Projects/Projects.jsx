@@ -1,6 +1,5 @@
 import styles from "./ProjectsStyles.module.css";
 import erpSystem from "../../assets/erp-system.svg";
-import newbioLogo from "../../assets/newbio-logo.svg";
 import granvilleBiomedicalLogo from "../../assets/granville-biomedical-logo.png";
 import tumorLearningCurve from "../../assets/tumor-learning-curve.png";
 import insuranceClaimDistribution from "../../assets/insurance-claim-distribution.png";
@@ -17,24 +16,16 @@ function Projects() {
     <section id="projects" className={styles.container}>
       <div className={styles.header}>
         <p>Selected work</p>
-        <h1 className="sectionTitle">Projects that connect software, science, and operations.</h1>
+        <h1 className="sectionTitle">Full-stack, mobile, data, and machine learning projects.</h1>
       </div>
       <div className={styles.projectsContainer}>
-        <ProjectCard
-          src={newbioLogo}
-          link="https://newbio.net"
-          h3="Newbio Trading Corp."
-          p1="B2B marketing and product site for a Canada-based supplier of probiotic and microbial ingredients."
-          p2="Built with Vite, Tailwind CSS, and an Express.js backend, connecting North American manufacturers with vetted overseas production."
-          tags={["Vite", "Tailwind CSS", "Express", "B2B"]}
-        />
         <ProjectCard
           src={erpSystem}
           link="https://erp-demo.newbio.net"
           githubLink="https://github.com/yiming168/erp-demo"
           h3="Baifude ERP/CRM"
-          p1="Python, Flask, SQLAlchemy, and MySQL system for customer, product, contract, shipment, financial, and reporting workflows, now with inventory, stock in/out, and procurement modules."
-          p2="Built from real biotech ingredient operations, including practical contract timing and sales lifecycle edge cases. Try the live English demo or browse the source."
+          p1="Python, Flask, SQLAlchemy, and MySQL application for orders, inventory, procurement, shipments, invoicing, payments, and reporting."
+          p2="Includes BOM-driven inventory automation, operational dashboards, natural-language data queries, a live demo, and public source code."
           tags={["Python", "Flask", "MySQL", "ERP", "Inventory"]}
         />
         <ProjectCard
@@ -74,7 +65,7 @@ function Projects() {
           link="https://crossythink-frontend.netlify.app/gameplay"
           h3="CrossyThink"
           p1="AI-powered crossword puzzle game with Flask REST backend, SQLAlchemy, MySQL, JWT authentication, and role-based access."
-          p2="Experimented with local Mistral 7B hosting before switching to Gemini API after graduation."
+          p2="Experimented with local Mistral 7B hosting before integrating the Gemini API for reliable deployment."
           tags={["Flask", "MySQL", "JWT", "LLM"]}
         />
         <ProjectCard

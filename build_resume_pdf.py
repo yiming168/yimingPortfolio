@@ -16,7 +16,7 @@ from reportlab.platypus import (
 )
 
 
-OUT = Path("public/Yiming_Zhu_Business_Systems_Resume.pdf")
+OUT = Path("public/Yiming_Zhu_Software_Developer_Resume_1p.pdf")
 
 
 class SmallGap(Flowable):
@@ -144,6 +144,9 @@ def role(title, meta, bullets):
 doc = SimpleDocTemplate(
     str(OUT),
     pagesize=letter,
+    title="Yiming Zhu - Software Developer Resume",
+    author="Yiming Zhu",
+    pageCompression=1,
     leftMargin=0.62 * inch,
     rightMargin=0.62 * inch,
     topMargin=0.55 * inch,
@@ -152,93 +155,69 @@ doc = SimpleDocTemplate(
 
 story = [
     p("YIMING ZHU", "Name"),
-    p("Business Systems Analyst / ERP-CRM Developer / Life Sciences Software Implementation", "Tagline"),
+    p("Recent Computer Systems Graduate | Junior Software Developer", "Tagline"),
     p(
-        "Langley, BC | (431) 887-1218 | yiming168@gmail.com | yimingzhu.netlify.app | Canadian citizen; TN-eligible for qualifying U.S. roles",
+        "Langley, BC | (431) 887-1218 | yiming168@gmail.com | yimingzhu.netlify.app | github.com/yiming168 | linkedin.com/in/yiming168",
         "Contact",
     ),
     HRFlowable(width="100%", thickness=0.8, color=colors.HexColor("#2E74B5")),
     SmallGap(4),
     section("SUMMARY"),
     p(
-        "Business systems analyst and full-stack developer with a rare combination of microbiology, food science, probiotic ingredient operations, and hands-on software development. Founded and operated Wuxi Baifude Biotech, maintaining trusted ingredient customer relationships over many years, then retrained in Computer Systems - AI and Machine Learning at BCIT with distinction. Strong fit for ERP/CRM, LIMS, implementation, configuration, and internal-tools roles where domain knowledge and practical systems thinking matter as much as coding."
-    ),
-    section("TARGET ROLES"),
-    p(
-        "Business Systems Analyst | ERP/CRM Analyst | Implementation Specialist | LIMS / Scientific Application Analyst | Full-Stack Developer for internal business tools"
+        "Recent BCIT Computer Systems Technology graduate with distinction (GPA 92%) and hands-on experience building and deploying full-stack applications. Strong foundation in Python, Java, C, SQL, JavaScript, REST APIs, databases, testing, and machine learning. Seeking an entry-level software development, application support, QA automation, data/SQL, or ERP/CRM support role."
     ),
     section("CORE SKILLS"),
-    p("<b>Systems:</b> ERP/CRM workflows, sales lifecycle, shipment tracking, contract management, financial tracking, implementation support"),
-    p("<b>Technology:</b> Python, Flask, SQLAlchemy, MySQL, JavaScript, TypeScript, React, React Native, Angular, Node.js, REST APIs"),
-    p("<b>Data / AI:</b> SQL, pandas, NumPy, scikit-learn, logistic regression, PCA, data preprocessing, model evaluation"),
-    p("<b>Domain:</b> Microbiology, food science, probiotic ingredients, biotech manufacturing operations, lab data collection, customer account context"),
-    section("SELECTED SYSTEMS AND SOFTWARE PROJECTS"),
+    p("<b>Languages:</b> Python, Java, C, SQL, JavaScript, TypeScript | <b>Web:</b> Flask, React, React Native, Angular, Node.js, REST APIs"),
+    p("<b>Data / Backend:</b> MySQL, SQLAlchemy, Firebase, Firestore, MongoDB, pandas, NumPy, scikit-learn, XGBoost"),
+    p("<b>Tools / Practices:</b> Git/GitHub, Docker, Linux, OOP, data structures, software testing, Agile/Scrum, application support"),
+    section("EXPERIENCE"),
     role(
-        "Baifude Biotech ERP/CRM System",
-        "Founder-Developer | Python, Flask, SQLAlchemy, MySQL | Dec 2025 - Present",
+        "ERP/CRM Developer - Wuxi Baifude Biotech",
+        "Contract, Remote | Dec 2025 - Present",
         [
-            "Built a working ERP/CRM system for a biotech ingredient business, translating real sales, shipment, contract, and payment workflows into software features.",
-            "Designed relational data models for customer accounts, products, contracts, shipments, and financial records, including ship-first/sign-later operating scenarios.",
-            "Used domain knowledge from probiotic raw-material sales to make the system practical for non-technical business users rather than a classroom-only demo.",
+            "Built and deployed a full-stack ERP/CRM system using Python, Flask, SQLAlchemy, MySQL, Bootstrap, and Docker.",
+            "Developed modules for orders, inventory, procurement, shipments, invoicing, payments, dashboards, and natural-language data queries.",
+            "Automated inventory updates with product BOM formulas and published a sanitized live demo with sample data.",
         ],
     ),
     role(
-        "Granville Biomedical Mobile App and Admin Portal",
-        "Team project | Expo, React Native, Firebase | Sep - Dec 2025",
+        "Laboratory Assistant - Bayer Crop Science",
+        "Winnipeg, MB | Feb - Oct 2022",
         [
-            "Helped deliver a cross-platform health education app published on the Apple App Store and Google Play.",
-            "Built/administered Firebase-backed quiz management workflows with staging and approval steps so non-technical staff could maintain production content safely.",
+            "Supported a haploid canola project while maintaining accurate process and sample data.",
+            "Coordinated daily activities and followed structured procedures in a cross-functional Canadian workplace.",
         ],
+    ),
+    section("SELECTED SOFTWARE PROJECTS"),
+    role(
+        "Granville Biomedical Mobile App and Admin Portal",
+        "React Native, Expo, Firebase | Sep - Dec 2025",
+        [
+            "Helped deliver a cross-platform client app published on the Apple App Store and Google Play.",
+            "Built a Firebase-backed admin portal with staged content submission, review, and approval workflows.",
+        ],
+    ),
+    role(
+        "Insurance Claim Prediction - 1st Place BCIT Competition",
+        "Python, XGBoost, scikit-learn | 2025",
+        ["Built a two-stage classification and regression pipeline that achieved the best MAE and F1 results among competing teams."],
     ),
     role(
         "CrossyThink AI Crossword Game",
         "Flask, SQLAlchemy, MySQL, JWT, Gemini API | Oct - Dec 2025",
         [
-            "Built a Flask REST backend with authentication, role-based access control, and MySQL persistence.",
-            "Integrated LLM-based puzzle generation, first through a local Mistral setup and later through Gemini API after graduation.",
+            "Built a Flask REST API with JWT authentication, role-based access control, MySQL persistence, and LLM-driven puzzle generation.",
         ],
     ),
     role(
         "MealPlanIQ",
         "Angular, Flask, Google Cloud Storage | Apr - May 2025",
-        ["Delivered meal-planning features including one-click meal replacement, nutrient recalculation, and plan compliance indicators."],
-    ),
-    role(
-        "Machine Learning Tumor Classification Pipeline",
-        "Python, pandas, scikit-learn | Jan - Apr 2024",
-        ["Implemented an end-to-end workflow for biomedical data preprocessing, variance filtering, PCA, model training, tuning, and evaluation."],
-    ),
-    section("PROFESSIONAL EXPERIENCE"),
-    role(
-        "Founder / Sales Manager, Wuxi Baifude Biotech Company",
-        "Wuxi, China | Apr 2013 - Mar 2019; customer relationships continued remotely",
-        [
-            "Founded and operated a probiotic and biotech ingredient business serving stable raw-material customers, with relationships that continued to rely on product and technical trust after relocation to Canada.",
-            "Managed customer requirements, supplier coordination, shipment timing, pricing, contracts, and receivables, giving direct business-process knowledge now applied to ERP/CRM development.",
-            "Kept the company practical and relationship-driven rather than large-scale, building credibility with customers who valued reliability, product knowledge, and follow-through.",
-        ],
-    ),
-    role(
-        "Sales Team Leader, BioGrowing Co., Ltd.",
-        "Shanghai, China | Oct 2010 - Mar 2013",
-        [
-            "Promoted from sales representative to team leader after top sales performance in 2011.",
-            "Supported new agricultural probiotic projects and helped expand product-line opportunities with a technical understanding of microbial products.",
-        ],
-    ),
-    role(
-        "Laboratory Assistant, Bayer Crop Science",
-        "Winnipeg, MB | Feb - Oct 2022",
-        ["Supported haploid canola plant project work with careful experimental data collection and team coordination."],
+        ["Implemented one-click meal replacement, nutrient recalculation, and plan compliance indicators in a full-stack application."],
     ),
     section("EDUCATION"),
-    p("British Columbia Institute of Technology - Diploma, Computer Systems: AI and Machine Learning, With Distinction, GPA 92%, 2025"),
-    p("Manitoba Institute of Trades and Technology - Postgraduate Certificate, Business Management, 2021"),
-    p("South China University of Tropical Agriculture - M.Sc., Microbiology, 2007"),
-    p("South China University of Tropical Agriculture - B.Eng., Food Science and Engineering, 2004"),
+    p("British Columbia Institute of Technology - Diploma, Computer Systems Technology: AI and Machine Learning, With Distinction, GPA 92%, Dec 2025"),
     section("ADDITIONAL PROJECTS"),
-    p("Open source: contributed and merged a C hash-table module to an educational programming repository."),
-    p("Web Diary: documented self-hosted LLM, Flask/Synology, and n8n automation learning notes."),
+    p("Open source: contributed a merged C hash-table module. Other work includes React/Firestore, Angular/Flask, computer vision, classification, and mobile projects."),
 ]
 
 doc.build(story)

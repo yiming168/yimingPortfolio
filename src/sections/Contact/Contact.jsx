@@ -5,7 +5,7 @@ function Contact() {
     <section id="contact" className={styles.container}>
       <div className={styles.panel}>
         <p className={styles.eyebrow}>Contact</p>
-        <h1>Available for software, ERP, application support, and biotech systems roles.</h1>
+        <h1>Available for junior software development and application support roles.</h1>
         <p className={styles.copy}>
           Based in Langley, BC. Open to Vancouver and Lower Mainland roles,
           Canadian remote work, and travel-heavy hybrid roles when relocation is

@@ -18,14 +18,14 @@ const Hero = () => {
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.info}>
-        <p className={styles.eyebrow}>BCIT CST AI & ML, GPA 92 with Distinction</p>
+        <p className={styles.eyebrow}>Recent BCIT CST graduate · GPA 92 · With Distinction</p>
         <h1>Yiming Zhu</h1>
-        <h2>Software developer for biotech, healthcare systems, and business operations.</h2>
+        <h2>Junior software developer building practical full-stack applications.</h2>
         <p className={styles.description}>
-          I combine microbiology training, Canadian laboratory experience, and
-          hands-on software development. My work spans Python and SQL systems,
-          ERP workflows, AI/ML projects, and scientific data problems where
-          clear records and reliable tools matter.
+          I recently completed BCIT&apos;s Computer Systems Technology program and
+          build reliable software with Python, Flask, SQL, JavaScript, and React.
+          My work includes a deployed ERP/CRM system, mobile and web applications,
+          REST APIs, database-backed tools, and machine learning projects.
         </p>
         <div className={styles.actions}>
           <a className={styles.primaryAction} href="/Yiming_Zhu_Software_Developer_Resume_1p.pdf">
@@ -60,8 +60,8 @@ const Hero = () => {
         </button>
         <div className={styles.profileCard}>
           <span>Focus</span>
-          <strong>BioTech AI Systems</strong>
-          <p>Python, SQL, ERP, LIMS-aware workflows, ML projects</p>
+          <strong>Junior Software Development</strong>
+          <p>Python, Flask, SQL, React, APIs, application support</p>
         </div>
       </div>
     </section>

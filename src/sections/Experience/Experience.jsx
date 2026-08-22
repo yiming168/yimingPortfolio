@@ -2,13 +2,13 @@ import styles from "./ExperienceStyles.module.css";
 
 const experience = [
   {
-    period: "2025 - Present",
-    title: "Founder-built ERP/CRM system",
-    organization: "Baifude Biotech business operations",
+    period: "Dec 2025 - Present",
+    title: "ERP/CRM Developer",
+    organization: "Wuxi Baifude Biotech · Contract, Remote",
     points: [
-      "Built a Python, Flask, SQLAlchemy, and MySQL system for customers, products, contracts, shipments, financial records, and reporting.",
-      "Modeled practical workflows from real biotech ingredient sales, including ship-first and sign-later contract handling.",
-      "Created a bridge between business operations, data structure, and user-facing support.",
+      "Built and deployed a full-stack ERP/CRM system with Python, Flask, SQLAlchemy, MySQL, Bootstrap, and Docker.",
+      "Developed modules for orders, inventory, procurement, shipments, invoicing, payments, dashboards, and natural-language data queries.",
+      "Automated inventory updates with product BOM formulas and documented a public demo with sample data.",
     ],
   },
   {
@@ -16,17 +16,8 @@ const experience = [
     title: "Laboratory Assistant",
     organization: "Bayer Crop Science, Winnipeg",
     points: [
-      "Supported a haploid canola project and contributed to accurate experiment data collection.",
-      "Worked in a local Canadian laboratory environment with attention to procedure, traceability, and team communication.",
-    ],
-  },
-  {
-    period: "2013 - 2019",
-    title: "Founder and Sales Manager",
-    organization: "Wuxi Baifude Biotech",
-    points: [
-      "Built a niche biotech ingredient company serving stable customers in probiotic and functional ingredient markets.",
-      "Combined scientific product knowledge with contracts, logistics, customer relationships, and operational problem solving.",
+      "Supported a haploid canola project and maintained accurate process and sample data.",
+      "Coordinated daily team activities and followed structured procedures in a cross-functional Canadian workplace.",
     ],
   },
 ];
@@ -36,7 +27,7 @@ function Experience() {
     <section id="experience" className={styles.container}>
       <div className={styles.header}>
         <p className={styles.eyebrow}>Experience</p>
-        <h2>Scientific context, business systems, and hands-on software.</h2>
+        <h2>Recent development work and Canadian team experience.</h2>
       </div>
       <div className={styles.timeline}>
         {experience.map((item) => (
